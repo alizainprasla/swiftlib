@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: SwiftLib.xcodeproj
+scheme: SwiftLib
+output_directory: reports
+ignore:
+  - SwiftLibTests/*
