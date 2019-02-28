@@ -15,6 +15,7 @@
 		9E9B12542227E3BD00F7A65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B12522227E3BD00F7A65B /* Main.storyboard */; };
 		9E9B12562227E3BD00F7A65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B12552227E3BD00F7A65B /* Assets.xcassets */; };
 		9E9B12592227E3BD00F7A65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B12572227E3BD00F7A65B /* LaunchScreen.storyboard */; };
+		9E9B125F2227F8AA00F7A65B /* SwiftLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B125E2227F8AA00F7A65B /* SwiftLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		9E9B12552227E3BD00F7A65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E9B12582227E3BD00F7A65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E9B125A2227E3BD00F7A65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E9B125E2227F8AA00F7A65B /* SwiftLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				9E9B11FC2227E2A000F7A65B /* SwiftLib.h */,
 				9E9B11FD2227E2A000F7A65B /* Info.plist */,
+				9E9B125E2227F8AA00F7A65B /* SwiftLib.swift */,
 			);
 			path = SwiftLib;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					9E9B11F82227E2A000F7A65B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					9E9B12012227E2A000F7A65B = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E9B125F2227F8AA00F7A65B /* SwiftLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		9E9B120E2227E2A000F7A65B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.foreepay.SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		9E9B120F2227E2A000F7A65B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		9E9B12112227E2A000F7A65B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		9E9B12122227E2A000F7A65B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
