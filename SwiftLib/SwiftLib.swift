@@ -20,8 +20,4 @@ public final class SwiftyLib {
         return a - b
     }
     
-    public func newa() -> String{
-        return "a"
-    }
-    
 }
