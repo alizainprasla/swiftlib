@@ -30,9 +30,6 @@ class SwiftLibTests: XCTestCase {
         XCTAssertEqual(swiftLib.sub(a: 2, b: 1), 1)
     }
     
-    func testNew(){
-        XCTAssertEqual(swiftLib.newa(), "a")
-    }
 
     func testExample() {
         // This is an example of a functional test case.
